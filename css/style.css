@@ -1,0 +1,77 @@
+#headerNavigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #91C8E4;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+}
+
+#navigation{
+    display: flex;
+    gap: 10px;
+}
+
+#headerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subTitle{
+    color: #78C1F3;
+}
+
+/* main section styling */
+
+#callUs{
+    display: flex;
+    margin-top: 10px;
+}
+
+#quotes{
+    flex-basis:80%;
+
+}
+
+#form{
+    
+    background-color: #91C8E4;
+    color: #F6F4EB;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#name, #email, #destination{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: greenyellow ;
+    border-radius: 10px;
+  }
+
+
+
+input[type=submit] {
+    display: flex;
+    width: 50%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.center-button {
+    
+    display: block;
+    margin: 10px auto 0;
+    justify-content: center;
+}
+
+
+body{
+    background-color: #DFD7BF;
+}
