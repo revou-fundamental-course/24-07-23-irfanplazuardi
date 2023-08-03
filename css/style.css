@@ -1,59 +1,104 @@
-#headerNavigation{
+/* Navigation bar styling */
+#headerNavigation {
     display: flex;
     justify-content: space-between;
-    background-color: #91C8E4;
     color: white;
     position: relative;
     top: 0;
     left: 0;
     padding: 10px 10px;
+    ;
 }
 
-#navigation{
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+#navigation {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
-#headerTitle{
+#navigation a {
+    text-decoration: none;
+    color: #F6F4EB;
+    padding: 8px 16px;
+    display: inline-block;
+    background-color: transparent;
+}
+
+#navigation a:hover {
+    background-color: #4893C3; 
+    color: #F6F4EB;
+}
+
+#headerTitle {
+    font-family: fantasy;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#subTitle{
-    color: #78C1F3;
+#subTitle {
+    font-family:sans-serif;
+    color: #F6F4EB;
 }
 
 /* main section styling */
 
-#callUs{
+
+#outerBox{
     display: flex;
     margin-top: 10px;
+    gap: 15%;
+    align-content: center;
 }
 
-#quotes{
-    flex-basis:80%;
-
+/* slideshow styling */
+.slider {
+    width: 1000px;
+    height: 400px;
 }
 
-#form{
-    
-    background-color: #91C8E4;
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#quotes {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #272829;
+    font-size: medium;
+}
+
+/* form styling */
+#form {
+    background-color: #AAB8C2;
     color: #F6F4EB;
     padding: 10px;
     border-radius: 10px;
+    height: 400px;
 }
 
-#name, #email, #destination{
+#name, #email, #destination {
     width: 100%;
     padding: 5px 5px;
     margin: 8px 0;
     box-sizing: border-box;
-    border-color: greenyellow ;
+    border-color: greenyellow;
     border-radius: 10px;
-  }
-
-
+}
 
 input[type=submit] {
     display: flex;
@@ -65,13 +110,49 @@ input[type=submit] {
 
 
 .center-button {
-    
+
     display: block;
     margin: 10px auto 0;
     justify-content: center;
 }
 
+/* outer body styling */
+body {
+    background-image: url('https://img.freepik.com/premium-photo/summer-vacation-travel-trip-planned-concepts-background-holiday-event-traveling-generative-ai_106651-7675.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;  
+}
 
-body{
-    background-color: #DFD7BF;
+/* mobile responsive design styling */
+@media screen and (max-width: 600px) {
+    #headerNavigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navigation {
+        margin-top: 1rem;
+    }
+
+    #headerTitle {
+        padding: 1rem 0;
+    }
+
+    #outerBox{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #formInput{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #name, #email, #destination{
+        width: 50%;
+        text-align: center;
+    }
+    
 }

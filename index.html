@@ -12,7 +12,7 @@
     <header>
         <!-- Navigation Section -->
         <section id="headerNavigation">
-            <a href="">Logo</a>
+            <img src="assets/logo.png" alt="logo" id="logo">
             <nav id="navigation">
                 <a href="">Home</a>
                 <a href="">Our Package</a>
@@ -27,29 +27,43 @@
     </header>
         <!-- Main Section -->
     <main>
-        <section id="callUs">
+        <!-- slideshow section -->
+        <section id="outerBox">
             <article id="quotes">
-                <img src="" alt="">
-                <h5>"Liburan yang menyenangkan bersama Travel Agentku"</h5>
+                <img src="assets/slide1.jpg" alt="slideimage1" class="slider">
+                <img src="assets/slide2.jpg" alt="slideimage2" class="slider">
+                <img src="assets/slide3.jpg" alt="slideimage3" class="slider">
+                <section>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </section>
+                <h3>"Liburan yang menyenangkan bersama Travel Agentku"</h3>
+        <!-- form section -->
             </article>
             <section id="form">
-                <h3 class="formTitle"> Contact Us</h3>
-                <h6 class="formTitle"> Sales akan menghubungi anda 1 x 24 jam setelah data kami terima</h6>
-                <form action="/action_page.php" id="formInput">
+                <h2 class="formTitle"> Contact Us</h2>
+                <h4 class="formTitle"> Sales akan menghubungi anda 1 x 24 jam setelah data kami terima</h4>
+                <form action="" id="formInput">
                     <label for="name">Your Name:</label><br>
                     <input type="text" id="name" name="yourname" placeholder="First and last name"><br>
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" placeholder="budi@mail.com"><br><br>
-                    <label for="destination">Where are you interested in?</label>
-                    <select id="destination" name="cars">
+                    <label for="destination">Where are you interested in?</label><br>
+                    <select id="destination">
                       <option value="Domestic">Domestic</option>
                       <option value="International">International</option>
                     </select>
-                    <input type="submit" value="Submit" class="center-button">
+                    <input type="submit" id="submit" value="Submit" class="center-button">
                  </form>
+
             </section>
         </section>
     </main>
+    <script src="js/script.js">
+
+    </script>
 </body>
 
 </html>
+
