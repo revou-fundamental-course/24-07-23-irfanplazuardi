@@ -53,6 +53,7 @@
     display: flex;
     margin-top: 10px;
     gap: 15%;
+    justify-content: center;
     align-content: center;
 }
 
@@ -114,6 +115,36 @@ input[type=submit] {
     display: block;
     margin: 10px auto 0;
     justify-content: center;
+}
+
+#countries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.travelDestination[img]{
+    width: 100px;
+    height: 200px;
+}
+
+.travelDestination {
+    justify-content: center;
+    align-content: center;  
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+#footer {
+    display:inline-flexbox;
+    justify-content: center;
+    align-content: center;
 }
 
 /* outer body styling */
