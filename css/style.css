@@ -30,7 +30,7 @@
 }
 
 #navigation a:hover {
-    background-color: #4893C3; 
+    background-color: #4893C3;
     color: #F6F4EB;
 }
 
@@ -42,14 +42,14 @@
 }
 
 #subTitle {
-    font-family:sans-serif;
+    font-family: sans-serif;
     color: #F6F4EB;
 }
 
 /* main section styling */
 
 
-#outerBox{
+#outerBox {
     display: flex;
     margin-top: 10px;
     gap: 15%;
@@ -79,8 +79,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #272829;
+    color: rgb(40, 40, 43) ;
     font-size: medium;
+
 }
 
 /* form styling */
@@ -92,7 +93,9 @@
     height: 400px;
 }
 
-#name, #email, #destination {
+#name,
+#email,
+#destination {
     width: 100%;
     padding: 5px 5px;
     margin: 8px 0;
@@ -117,6 +120,7 @@ input[type=submit] {
     justify-content: center;
 }
 
+/* travel destination styling */
 #countries {
     display: flex;
     flex-direction: row;
@@ -125,34 +129,67 @@ input[type=submit] {
     justify-content: center;
 }
 
-.travelDestination[img]{
-    width: 100px;
-    height: 200px;
-}
-
 .travelDestination {
     justify-content: center;
-    align-content: center;  
+    align-content: center;
     flex-wrap: wrap;
 }
 
-ul{
-    list-style-type: none;
-    
+.travelDestination h3 {
+    text-align: center;
 }
 
+/* footer styling */
+
 #footer {
-    display:inline-flexbox;
-    justify-content: center;
-    align-content: center;
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
 }
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#socialMedia li {
+    list-style-type: none;
+    display:inline;
+    margin-right: 100px; 
+}
+
+#socialMedia li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #272829;
+  transition: background-color 0.3s ease;
+}
+
+#socialMedia li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#footer h5 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+
 
 /* outer body styling */
 body {
     background-image: url('https://img.freepik.com/premium-photo/summer-vacation-travel-trip-planned-concepts-background-holiday-event-traveling-generative-ai_106651-7675.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
 }
 
 /* mobile responsive design styling */
@@ -171,19 +208,21 @@ body {
         padding: 1rem 0;
     }
 
-    #outerBox{
+    #outerBox {
         flex-direction: column;
         text-align: center;
     }
 
-    #formInput{
+    #formInput {
         max-width: 100%;
         text-align: center;
     }
 
-    #name, #email, #destination{
+    #name,
+    #email,
+    #destination {
         width: 50%;
         text-align: center;
     }
-    
+
 }
