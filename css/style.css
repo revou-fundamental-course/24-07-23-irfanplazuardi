@@ -52,15 +52,17 @@
 #outerBox {
     display: flex;
     margin-top: 10px;
-    gap: 15%;
-    justify-content: center;
-    align-content: center;
+    gap: 7%;
+    justify-content: space-evenly;
 }
 
 /* slideshow styling */
 .slider {
     width: 1000px;
     height: 400px;
+
+    
+    
 }
 
 .dot {
@@ -93,9 +95,7 @@
     height: 400px;
 }
 
-#name,
-#email,
-#destination {
+#name,#email,#destination {
     width: 100%;
     padding: 5px 5px;
     margin: 8px 0;
@@ -126,12 +126,12 @@ input[type=submit] {
     flex-direction: row;
     flex-wrap: wrap;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
 #countries img{
     width: 500px;
-    height: 350px;
+    height: 300px;
 }
 
 .travelDestination {
@@ -214,8 +214,10 @@ body {
     }
 
     #outerBox {
+        display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: center;
     }
 
     #formInput {
@@ -223,11 +225,25 @@ body {
         text-align: center;
     }
 
-    #name,
-    #email,
-    #destination {
+    #name,#email,#destination {
         width: 50%;
         text-align: center;
     }
+
+    #socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left:10px;
+    }
+
+    #socialMedia li {
+        display: flex;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    
 
 }
