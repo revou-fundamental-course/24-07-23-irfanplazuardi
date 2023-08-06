@@ -129,6 +129,11 @@ input[type=submit] {
     justify-content: center;
 }
 
+#countries img{
+    width: 500px;
+    height: 350px;
+}
+
 .travelDestination {
     justify-content: center;
     align-content: center;

@@ -4,6 +4,10 @@ function validateForm() {
     const emailInput = document.getElementById('email').value.trim();
     const destinationInput = document.getElementById('destination').value;
 
+    console.log('name', nameInput)
+    console.log('email', emailInput)
+    console.log( 'destination', destinationInput)
+
     // Check if all fields are empty
     if (!nameInput || !emailInput || !destinationInput) {
       alert('Please fill in all the fields.');
